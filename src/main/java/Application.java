@@ -1,0 +1,40 @@
+import java.sql.*;
+
+public class Application {
+    static final String URL = "jdbc:postgresql://localhost:5432/skypro";
+    static final String USER = "postgres";
+    static final String PASSWORD = "2020";
+
+    public static void main(String[] args) throws SQLException
+    {
+        try (final Connection connection =
+                     DriverManager.getConnection(URL,USER, PASSWORD))
+             {
+            PreparedStatement statement =
+                    connection.prepareStatement("SELECT * FROM employee FULL OUTER JOIN city ON employee.city_id = city.city_id WHERE id = (?)");
+            statement.setInt(1, 5);
+            final ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                String firstName = "Имя: " + resultSet.getString("first_name");
+                String lastName = "Фамилия: " + resultSet.getString("last_name");
+                String gender = "Пол: " + resultSet.getString("gender");
+                String age = "Возраст: " + resultSet.getInt("age");
+                String city = "Город: " + resultSet.getString("city_name");
+
+                System.out.println(firstName);
+                System.out.println(lastName);
+                System.out.println(gender);
+                System.out.println(age);
+                System.out.println(city);
+
+            }
+        }
+        EmployeeDAOImpl serviceEmployeeDAO = new EmployeeDAOImpl();
+        System.out.println(serviceEmployeeDAO.getById(1));
+        serviceEmployeeDAO.addEmployee("Ivan", "Ivanov", "male",20 , 1);
+        System.out.println(serviceEmployeeDAO.updateEmployeeById(1, "Stepan", "Stepanov", "male", 14, 2));
+        serviceEmployeeDAO.deleteById(1);
+        System.out.println(serviceEmployeeDAO.getAllEmployees());
+    }
+}
+
