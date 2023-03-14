@@ -1,11 +1,23 @@
+import javax.persistence.*;
+
 import java.util.Objects;
 
+@Entity
+@Table(name = "employee")
 public class Employee {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int id;
+    @Column(name = "first_name")
     private String firstName;
+    @Column(name = "last_name")
     private String lastName;
+    @Column(name = "gender")
     private String gender;
+    @Column(name = "age")
     private int age;
+    @Column(name = "city_id")
     private int cityId;
 
     public Employee() {
@@ -70,7 +82,7 @@ public class Employee {
     }
 
 
-      public int getCityId() {
+    public int getCityId() {
         return cityId;
     }
 
@@ -85,12 +97,7 @@ public class Employee {
         Employee employee = (Employee) o;
         return id == employee.id && age == employee.age && cityId == employee.cityId
                 && Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName)
-                && Objects.equals(gender, employee.gender) ;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, firstName, lastName, gender, age,  cityId);
+                && Objects.equals(gender, employee.gender);
     }
 
     @Override

@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fe9f511-9da8-458a-abd7-4eaa8308695f" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EmployeeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EmployeeDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8fe9f511-9da8-458a-abd7-4eaa8308695f" name="Changes" comment="Fourth commit">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f0919333-05eb-4266-8041-e3c28ecc901d.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f0919333-05eb-4266-8041-e3c28ecc901d/storage_v2/_src_/database/skypro.7NVZyg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f0919333-05eb-4266-8041-e3c28ecc901d/storage_v2/_src_/database/skypro.7NVZyg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f0919333-05eb-4266-8041-e3c28ecc901d/storage_v2/_src_/database/skypro.7NVZyg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HibernateSessionFactoryUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmployeeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmployeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmployeeDAOImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +91,11 @@
       <updated>1677611572621</updated>
       <workItem from="1677611574554" duration="1750000" />
       <workItem from="1677836399420" duration="2696000" />
-      <workItem from="1678005962435" duration="14329000" />
+      <workItem from="1678005962435" duration="15137000" />
+      <workItem from="1678039542561" duration="335000" />
+      <workItem from="1678277366185" duration="2137000" />
+      <workItem from="1678724027416" duration="2837000" />
+      <workItem from="1678779075379" duration="1264000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1677611629508</created>
@@ -94,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677611629508</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second commit">
+      <created>1678037202725</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678037202725</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Third commit">
+      <created>1678037406776</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678037406776</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +137,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Second commit" />
+    <MESSAGE value="Third commit" />
+    <MESSAGE value="Fourth commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fourth commit" />
   </component>
 </project>
